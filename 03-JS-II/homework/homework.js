@@ -201,7 +201,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-  if(valor === true){
+  //Aqui como se pasa un un valor booleano lo que va a pasar a evaluar la primera condición s un true o un false
+  //No hace falta en si evaluar nada
+  if(valor){
     return "Soy verdadero";
   }else{
     return "Soy falso";
