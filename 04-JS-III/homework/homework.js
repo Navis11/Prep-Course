@@ -134,8 +134,6 @@ function multiplicarArgumentos() {
   /*Arguments funciona como un array, aunque no es uno, también se puede utilizar con ella el método .length
   y para tener acceso a cada uno de sus elementos solo hay que llamarla en el numero de posición*/
   //[2, 4, 6]
-  
-
   if (arguments.length < 1){
     return 0;
 
@@ -270,13 +268,8 @@ function breakStatement(numero) {
     return "Se interrumpió la ejecución";
   }else if(nvoArray.length === 10){
     return nvoArray;
-  }
-  
-
-
- 
-    
-  }
+  } 
+}
 
 
 function continueStatement(numero) {
