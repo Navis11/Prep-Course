@@ -9,20 +9,21 @@ function crearUsuario() {
   // Devuelve la clase
   // Tu código:
   // Con una clase ES6
-  class Usuario {                            //El objeto base es un objeto cualquiera
-    constructor(opciones) {                  //Opciones en este caso es mi objeto base, las instancias hechas
-      this.usuario = opciones.usuario;       //desde Usuario van a tener a opciones como prototipo  
-      this.nombre = opciones.nombre;         // por lo tanto van a poder acceder a las propiedades y métodos
-      this.email = opciones.email;           // del objeto base (opciones)
+  class Usuario {                            //opciones es un objeto cualquiera, es una manera en la que nos
+    constructor(opciones) {                  //pueden pasar los argumentos en lugar de hacerlo por separado
+      this.usuario = opciones.usuario;        
+      this.nombre = opciones.nombre;         
+      this.email = opciones.email;           
       this.password = opciones.password;
     }
     saludar() {                                      
-      return "Hola, mi nombre es " + this.nombre;  //En ES6 no usamos la palabra prototype para los métodos
-    }
+      return "Hola, mi nombre es " + this.nombre;  //En ES6 no usamos la palabra prototype para los métodos, cuando
+    }                                              //están declarados dentro de la clase, lo usamos cuando hacemos
+                                                  //Algun método desde afuera  
   }
     return Usuario;
 
-    /* CON UNA FUNCIÓN CONSTRUCTORA
+    /*CON UNA FUNCIÓN CONSTRUCTORA
     function Usuario(opciones) {
       this.usuario = opciones.usuario;
       this.nombre = opciones.nombre;
@@ -34,8 +35,8 @@ function crearUsuario() {
       return 'Hola, mi nombre es ' + this.nombre;
     };
   
-    return Usuario;
-    */
+    return Usuario;*/
+
 }
 
 function agregarMetodoPrototype(Constructor) {
